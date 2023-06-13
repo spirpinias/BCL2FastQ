@@ -14,4 +14,3 @@ flowcell=$(find -L ../data -type d -name "flowcell")
 --ignore-missing-positions \
 --ignore-missing-controls \
 -r ${num_process}
-
