@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ./config.sh
+
 basecalls=$(find -L ../data -type d -name "BaseCalls")
 flowcell=$(find -L ../data -type d -name "flowcell")
 
