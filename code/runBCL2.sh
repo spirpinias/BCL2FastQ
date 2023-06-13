@@ -4,7 +4,7 @@ source ./config.sh
 
 basecalls=$(find -L ../data -type d -name "BaseCalls")
 flowcell=$(find -L ../data -type d -name "flowcell")
-bcl2=$(find -L ../data -type f -name "bcl2fastq")
+bcl2=$(find -L ../data -name "bcl2fastq")
 
 
 ${bcl2} \
