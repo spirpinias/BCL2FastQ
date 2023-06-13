@@ -4,8 +4,10 @@ source ./config.sh
 
 basecalls=$(find -L ../data -type d -name "BaseCalls")
 flowcell=$(find -L ../data -type d -name "flowcell")
+bcl2=$(find -L ../data -type f -name "bcl2fastq")
 
-/root/capsule/code/usr/local/bin/bcl2fastq \
+
+${bcl2} \
 -i ${basecalls} \
 -R ${flowcell} \
 -o ../results/ \
@@ -13,4 +15,7 @@ flowcell=$(find -L ../data -type d -name "flowcell")
 --ignore-missing-filter \
 --ignore-missing-positions \
 --ignore-missing-controls \
--r ${num_process}
+-r ${num_process} \
+-p ${num_process} \
+-w ${num_process}
+
