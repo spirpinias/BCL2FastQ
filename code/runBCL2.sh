@@ -7,8 +7,8 @@ flowcell=$(find -L ../data -type d -name "flowcell")
 
 ./bcl2fastq \
 -i ${basecalls} \
--R /root/capsule/data/flowcell/ \
--o ${flowcell} \
+-R ${flowcell} \
+-o ../results/ \
 --ignore-missing-bcls \
 --ignore-missing-filter \
 --ignore-missing-positions \
