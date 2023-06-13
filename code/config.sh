@@ -10,7 +10,13 @@ else
   echo ""
 fi
 
-# Illumina
+# Files
+
+basecalls=$(find -L ../data -type d -name "BaseCalls")
+flowcell=$(find -L ../data -type d -name "flowcell")
+bcl2=$(find -L ../data -name "bcl2fastq")
+
+# Parameters
 
 if [ -z "${1}" ]; then
   num_process=$(cat /proc/cpuinfo | grep processor | wc -l)

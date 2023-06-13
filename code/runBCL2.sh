@@ -2,10 +2,6 @@
 
 source ./config.sh
 
-basecalls=$(find -L ../data -type d -name "BaseCalls")
-flowcell=$(find -L ../data -type d -name "flowcell")
-bcl2=$(find -L ../data -name "bcl2fastq")
-
 echo "Number of Processors : ${num_process}"
 
 /root/capsule/code/usr/local/bin/bcl2fastq \
