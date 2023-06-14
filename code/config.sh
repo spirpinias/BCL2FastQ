@@ -47,3 +47,9 @@ if [ "${5}" = "True" ]; then
 else
     ignore_controls=""
 fi
+
+if [ -z "${6}" ]; then
+  tiles=''
+else
+  tiles="${1}"
+fi
