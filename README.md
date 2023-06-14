@@ -41,14 +41,14 @@ In the case of single end
 - Reports
 - Stats
 - Test
-    - Read_R1.fastq.gz 
+    - Read_R1_001.fastq.gz 
       
 In the case of paired end
 - Reports
 - Stats
 - Test
-    - Read_R1.fastq.gz 
-    - Read_R2.fastq.gz
+    - Read_R1_001.fastq.gz 
+    - Read_R2_001.fastq.gz
 
 ## Parameters
 
