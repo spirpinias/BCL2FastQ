@@ -35,7 +35,7 @@ This capsule requires a flowcell in the format dscribed above.
 
 In your results folder you will find generated reports, statistics, and sequencing files in .fastq.gz format.
 
-Basic Directory Layout
+Directory Layout
 
 In the case of single end
 - Reports
