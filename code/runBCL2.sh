@@ -33,6 +33,4 @@ then
     ${fast_compress_level} \
     ${barcode_mismatch} \
     ${no_lane_split} 
-
-done
 fi
