@@ -1,2 +1,9 @@
 metadata_version: 1
 name: BCL2FastQ
+description: a tool for converting binary base calls to fastq.
+tags:
+- bioinformatics
+- sequencing
+- illumina
+authors:
+- name: Stephen Pirpinias
