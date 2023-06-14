@@ -15,7 +15,7 @@ been completely sequenced.
 - Assumes your **data** folder is in the format described by page 4 of the documentation.
 - https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq_letterbooklet_15038058brpmi.pdf
 
-Basic Directory Layout
+Directory Layout & Naming Conventions
 
 - flowcell
     - Config
