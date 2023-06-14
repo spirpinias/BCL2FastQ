@@ -59,3 +59,27 @@ if [ -z "${7}" ]; then
 else
   min_trim_read_len="--minimum-trimmed-read-length ${7}"
 fi
+
+if [ -z "${8}" ]; then
+  mask_short_adapter_reads=""
+else
+  mask_short_adapter_reads="--mask-short-adapter-reads ${8}"
+fi
+
+if [ -z "${9}" ]; then
+  adapter_stringency=""
+else
+  adapter_stringency="--adapter-stringency ${9}"
+fi
+
+if [ "${10}" = "True" ]; then
+    write_fastq_reverse="--write-fastq-reverse-complement"
+else
+    write_fastq_reverse=""
+fi
+
+if [ "${11}" = "True" ]; then
+    with_failed_reads="--with-failed-reads"
+else
+    with_failed_reads=""
+fi

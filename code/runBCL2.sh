@@ -16,5 +16,7 @@ ${ignore_controls} \
 -p ${num_process} \
 -w ${num_process} \
 ${tiles} \
-${min_trim_read_len} 
-
+${min_trim_read_len} \
+${mask_short_adapter_reads} \
+${adapter_stringency} \
+${write_fastq_reverse}
