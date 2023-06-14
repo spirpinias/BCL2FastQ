@@ -53,3 +53,9 @@ if [ -z "${6}" ]; then
 else
   tiles="--tiles ${6}"
 fi
+
+if [ -z "${7}" ]; then
+  min_trim_read_len=""
+else
+  min_trim_read_len="--minimum-trimmed-read-length ${7}"
+fi
