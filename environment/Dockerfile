@@ -1,4 +1,4 @@
-# hash:sha256:d4b1e43fdc729b9e89768f0ec0712aaefb4d1a57de7a96fb8f9274da5c68952e
+# hash:sha256:be06914b022c2f1401e4be514a89f740c15964d33d86dd14ef05f6f8b173b046
 FROM registry.apps.codeocean.com/codeocean/mambaforge3:22.11.1-4-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -17,5 +17,5 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mamba install -y --channel=bih-cubi \
-        bcl2fastq2 \
+        bcl2fastq2==2.20.0.422 \
     && mamba clean -ya
