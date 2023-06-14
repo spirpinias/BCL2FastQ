@@ -1,4 +1,4 @@
-# hash:sha256:d12edb1e7ed67137ea13e6b184ad8f4cc854d11d58f57bc1d5c8d8b1ec9f9c57
+# hash:sha256:d4b1e43fdc729b9e89768f0ec0712aaefb4d1a57de7a96fb8f9274da5c68952e
 FROM registry.apps.codeocean.com/codeocean/mambaforge3:22.11.1-4-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -15,3 +15,7 @@ RUN apt-get update \
         subversion=1.14.1-3ubuntu0.22.04.1 \
         wget=1.21.2-2ubuntu1 \
     && rm -rf /var/lib/apt/lists/*
+
+RUN mamba install -y --channel=bih-cubi \
+        bcl2fastq2 \
+    && mamba clean -ya

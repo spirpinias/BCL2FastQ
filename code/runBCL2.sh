@@ -4,7 +4,7 @@ source ./config.sh
 
 echo "Number of Processors : ${num_process}"
 
-/root/capsule/code/usr/local/bin/bcl2fastq \
+bcl2fastq \
 -i ${basecalls} \
 -R ${flowcell} \
 -o ../results/ \
