@@ -29,7 +29,7 @@ Basic Directory Layout
 
 ## Usage
 
-This capsule requires a flowcell run.
+This capsule requires a flowcell in the format dscribed above.
 
 ## Output
 
