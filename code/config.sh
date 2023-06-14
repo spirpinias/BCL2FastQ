@@ -51,5 +51,5 @@ fi
 if [ -z "${6}" ]; then
   tiles=""
 else
-  tiles="--tiles ${1}"
+  tiles="--tiles ${6}"
 fi
