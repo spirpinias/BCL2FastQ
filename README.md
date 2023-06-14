@@ -12,28 +12,11 @@ been completely sequenced.
 
 ## Input
 
-- Searches your **data** folder for the alignment file in .bam and .bam.bai format. 
+- Assumes your **data** folder is in the format described by page 4 of the documentation.
 
 ## Usage
 
-This capsule requires alignment files that are position sorted and indexed bam format. When you supply alignment files, the capsule will return normalized according to the features on App Panel selected.
-
-In the case of one. 
- - bamFiles
-   - SampleA.bam
-   - SampleA.bam.bai
-
-In the case of many.
- - bamFiles
-   - SampleA.bam
-   - SampleA.bam.bai
-   - SampleB.bam
-   - SampleB.bam.bai
-   - SampleC.bam
-   - SampleC.bam.bai
-
-Blacklist (if any)
-   - blacklist.bed
+This capsule requires a flowcell run.
 
 ## Output
 
