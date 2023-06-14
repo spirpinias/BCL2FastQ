@@ -13,8 +13,9 @@ fi
 # Files
 
 basecalls=$(find -L ../data -type d -name "BaseCalls")
+basecalls_count=$(echo $basecalls | wc -w)
 flowcell=$(find -L ../data -type d -name "flowcell")
-bcl2=$(find -L ../data -name "bcl2fastq")
+flowcell_count=$(echo $flowcell | wc -w)
 
 # Parameters
 
