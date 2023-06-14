@@ -1,4 +1,4 @@
-# hash:sha256:be06914b022c2f1401e4be514a89f740c15964d33d86dd14ef05f6f8b173b046
+# hash:sha256:b8f1a0769bc766b4790cbd7b84860e5ad9381f94f1ca9c3c3717416c860b242e
 FROM registry.apps.codeocean.com/codeocean/mambaforge3:22.11.1-4-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -6,15 +6,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
-
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-        cpio=2.13+dfsg-7 \
-        gzip=1.10-4ubuntu4.1 \
-        rpm2cpio=4.17.0+dfsg1-4build1 \
-        subversion=1.14.1-3ubuntu0.22.04.1 \
-        wget=1.21.2-2ubuntu1 \
-    && rm -rf /var/lib/apt/lists/*
 
 RUN mamba install -y --channel=bih-cubi \
         bcl2fastq2==2.20.0.422 \
