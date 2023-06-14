@@ -2,9 +2,6 @@
 
 source ./config.sh
 
-
-
-
 if [ "$basecalls_count" -eq 1 ] & [ "$flowcell_count" -eq 1 ];
 then
 
