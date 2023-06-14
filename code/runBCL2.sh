@@ -8,10 +8,10 @@ bcl2fastq \
 -i ${basecalls} \
 -R ${flowcell} \
 -o ../results/ \
---ignore-missing-bcls \
---ignore-missing-filter \
---ignore-missing-positions \
---ignore-missing-controls \
+${ignore_bcls} \
+${ignore_filter} \
+${ignore_positions} \
+${ignore_controls} \
 -r ${num_process} \
 -p ${num_process} \
 -w ${num_process}
