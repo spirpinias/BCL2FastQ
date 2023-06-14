@@ -83,3 +83,39 @@ if [ "${11}" = "True" ]; then
 else
     with_failed_reads=""
 fi
+
+if [ "${12}" = "True" ]; then
+    create_fastq_index="--create-fastq-for-index-reads"
+else
+    create_fastq_index=""
+fi
+
+if [ "${13}" = "True" ]; then
+    sliding_window="--find-adapters-with-sliding-window"
+else
+    sliding_window=""
+fi
+
+if [ "${14}" = "True" ]; then
+    no_compress="--no-bgzf-compression"
+else
+    no_compress=""
+fi
+
+if [ -z "${15}" ]; then
+  fast_compress_level=""
+else
+  fast_compress_level="--fastq-compression-level ${15}"
+fi
+
+if [ -z "${16}" ]; then
+  barcode_mismatch=""
+else
+  barcode_mismatch="--barcode-mismatches ${16}"
+fi
+
+if [ "${17}" = "True" ]; then
+    no_lane_split="--no-lane-splitting"
+else
+    no_lane_split=""
+fi
