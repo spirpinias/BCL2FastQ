@@ -49,7 +49,7 @@ else
 fi
 
 if [ -z "${6}" ]; then
-  tiles=''
+  tiles=""
 else
   tiles="${1}"
 fi
