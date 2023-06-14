@@ -20,42 +20,28 @@ This capsule requires a flowcell run.
 
 ## Output
 
-In your results folder you will find the bigWig file with normalizations applied.
-
-In the case of one.
-
-   - Results 
-      - SampleA.bw
-
-In the case of many.
-
-   - Results 
-      - SampleA.bw
-      - SampleB.bw
-      - SampleC.bw
+In your results folder you will find generated reports, statistics, and sequencing files in .fastq.gz format.
 
       
 ## Parameters
 
-- Number of Threads, if not utilized will automatically use all available.
-- Bin Size.
-- Any Chromosomes you wish to ignore during normalization. Default is chrX.
-- Choose a Normalization Technique from the list of choices.
-- Choose the version of genome your alignment file was generated from.
-- Determinate nucleosome position (if MNase-Seq) 
-- Usage of Offset
-- Emphasis on reads on the Forward or Reverse Strand.
-- Region of the Genome to focus.
-- Blacklisted Regions (if any)
-- Exact scaling
-- Skip Non Covered Regions
-- Smooth length
-- Extend Reads
-- Ignore Duplicate Reads
-- Center Reads
-- Sam Field Include Flag
-- Sam Field Exclude Flag
-
+- Number of Processors, if not utilized will automatically use all available.
+- Ignore Missing BCL 
+- Ignore Missing Filters
+- Ignore Missing Positions
+- Ignore Missing Controls
+- Tiles 
+- Minimum Read Length
+- Mask Short Adapter Reads
+- Adapter Stringency
+- Write Fastq Reverse Complement
+- Include Non-PF Clusters
+- Create FASTQ Files for Index Reads
+- Find Adapters with Sliding Window
+- No BGZF Compression
+- FASTQ Compression Level
+- Barcode Mismatches
+- No Lane Splitting
 
 ## Source
 
