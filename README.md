@@ -15,7 +15,7 @@ been completely sequenced.
 - Assumes your **data** folder is in the format described by page 4 of the documentation.
 - https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq_letterbooklet_15038058brpmi.pdf
 
-- Basic Directory Layout
+Basic Directory Layout
 
 - flowcell
     - Config
@@ -27,7 +27,6 @@ been completely sequenced.
     - RunInfo.xml
     - SampleSheet.csv
 
-    
 ## Usage
 
 This capsule requires a flowcell run.
@@ -36,7 +35,19 @@ This capsule requires a flowcell run.
 
 In your results folder you will find generated reports, statistics, and sequencing files in .fastq.gz format.
 
+Basic Directory Layout
+
+- Reports
+- Stats
+- Test
+    - Read_R1.fastq.gz (in the case of single end)
       
+- Reports
+- Stats
+- Test
+    - Read_R1.fastq.gz 
+    - Read_R2.fastq.gz (in the case of paired end)
+
 ## Parameters
 
 - Number of Processors, if not utilized will automatically use all available.
