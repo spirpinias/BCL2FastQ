@@ -37,16 +37,18 @@ In your results folder you will find generated reports, statistics, and sequenci
 
 Basic Directory Layout
 
-- Reports
-- Stats
-- Test
-    - Read_R1.fastq.gz (in the case of single end)
-      
+In the case of single end
 - Reports
 - Stats
 - Test
     - Read_R1.fastq.gz 
-    - Read_R2.fastq.gz (in the case of paired end)
+      
+In the case of paired end
+- Reports
+- Stats
+- Test
+    - Read_R1.fastq.gz 
+    - Read_R2.fastq.gz
 
 ## Parameters
 
