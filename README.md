@@ -13,6 +13,7 @@ been completely sequenced.
 ## Input
 
 - Assumes your **data** folder is in the format described by page 4 of the documentation.
+- https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq_letterbooklet_15038058brpmi.pdf
 
 ## Usage
 
